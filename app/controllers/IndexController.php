@@ -7,6 +7,9 @@ class IndexController extends ControllerBase
     {
 
     }
+    public function textAction(){
+        echo "hello world";
+    }
 
 }
 
