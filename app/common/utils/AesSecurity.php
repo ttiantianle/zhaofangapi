@@ -4,6 +4,7 @@
  * @package app\common\utils
  * 主要是与前端交互 目前仅支持AES-128-CBC  AES-256-CBC
  */
+namespace Common\Utils;
 class AesSecurity
 {
     /**

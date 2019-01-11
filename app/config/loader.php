@@ -15,26 +15,30 @@ $loader = new \Phalcon\Loader();
 $loader->registerDirs(
     [
         //公共模块
-        BASE_PATH . '/utils/',
+        APP_PATH . '/common/utils/',
+        APP_PATH . '/common/controllers/',
+        APP_PATH . '/common/models/',
         //后端模块
-        APP_PATH . '/controllers/',
-        APP_PATH . '/models/',
+        APP_PATH . '/backend/controllers/',
+        APP_PATH . '/backend/models/',
         //前端模块
-        BASE_PATH.'/front/models/',
-        BASE_PATH.'/front/controllers/',
+        APP_PATH.'/frontend/models/',
+        APP_PATH.'/frontend/controllers/',
     ]
 );
 $loader->registerNamespaces([
     //公共模块
-    'Utils' =>BASE_PATH.'/utils/',
+    'Common\Utils' =>APP_PATH.'/common/utils/',
+    'Common\Controllers' =>APP_PATH.'/common/controllers/',
+    'Common\Models' =>APP_PATH.'/common/models/',
     //后端模块
-    'Home\Models' => APP_PATH.'/models/',
-    'Home\Service' => APP_PATH.'/service/',
-    'Home\Controllers' => APP_PATH.'/controllers/',
+    'Home\Models' => APP_PATH.'/backend/models/',
+//    'Home\Service' => APP_PATH.'/service/',
+    'Home\Controllers' => APP_PATH.'/backend/controllers/',
     //front 前端模块
-    'Front\Models' => BASE_PATH.'/front/models/',
-    'Front\Service' => BASE_PATH.'/front/service/',
-    'Front\Controllers' => BASE_PATH.'/front/controllers/',
+    'Front\Models' => APP_PATH.'/frontend/models/',
+//    'Front\Service' => BASE_PATH.'/front/service/',
+    'Front\Controllers' => APP_PATH.'/frontend/controllers/',
 ]);
 
 $loader->register();

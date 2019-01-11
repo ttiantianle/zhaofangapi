@@ -3,6 +3,7 @@
  * Class CEXPORT 导出
  * @package app\common\utils
  */
+namespace Common\Utils;
 class CExport{
     /**
      * @param $html 是不是html

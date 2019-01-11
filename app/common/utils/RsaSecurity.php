@@ -3,6 +3,7 @@
  * Class RsaSecurity
  * @package app\common\utils
  */
+namespace Common\Utils;
 class RsaSecurity{
     /**
      * @var array 公钥私钥

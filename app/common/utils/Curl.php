@@ -3,6 +3,7 @@
  * Class Curl curl 公共类
  * @package app\common\utils
  */
+namespace Common\Utils;
 class Curl {
     public static $Error ;
     public static $SlowTime=1;//second

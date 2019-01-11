@@ -3,6 +3,7 @@
  * Class CFunc 存放公共方法的类
  * @package app\common\utils
  */
+namespace Common\Utils;
 class CFunc{
     /**
      * @return array
